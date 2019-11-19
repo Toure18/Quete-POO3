@@ -1,7 +1,8 @@
 <?php
 require_once 'Vehicle.php';
+require_once 'LightableInterface.php';
 
-class CarsSimpson extends Vehicle
+class CarsSimpson extends Vehicle implements LightableInterface
 {
     /**
      * @var string
@@ -38,5 +39,15 @@ class CarsSimpson extends Vehicle
     public function setEnergyLevel(int $energyLevel): void
     {
         $this->energyLevel = $energyLevel;
+    }
+
+    public function switchOn()
+    {
+        return 'Car : true';
+    }
+
+    public function switchOff()
+    {
+        return 'Car : false';
     }
 }

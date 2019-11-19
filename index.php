@@ -47,5 +47,17 @@ echo '<br>';
 $ville->addVehicle($car);
 echo '<br>';
 
+echo $car->switchOff();
+echo '<br>';
+echo $car->switchOn();
+echo '<br>';
+$bicycle->setCurrentSpeed(15);
+echo $bicycle->switchOn();
+echo '<br>';
+echo $bicycle->switchOff();
+
+
+
+
 
 
